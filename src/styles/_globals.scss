@@ -1,21 +1,27 @@
-// ─── VARIABLES ───────────────────────────────────────────
-$bg:      #04080f;
-$bg2:     #070d1a;
-$cyan:    #38bdf8;
-$orange:  #fb923c;
-$purple:  #818cf8;
-$text:    #cbd5e1;
-$muted:   #94a3b8;
-$dim:     #64748b;
-$border:  rgba(56, 189, 248, 0.1);
-$card:    rgba(7, 13, 26, 0.75);
+// VARIABLES
+$bg: #04080f;
+$bg2: #070d1a;
+$cyan: #38bdf8;
+$orange: #fb923c;
+$purple: #818cf8;
+$text: #cbd5e1;
+$muted: #94a3b8;
+$dim: #64748b;
+$border: rgba(56, 189, 248, 0.1);
+$card: rgba(7, 13, 26, 0.75);
 
 $ff-display: 'Syne', sans-serif;
-$ff-mono:    'Space Mono', monospace;
-$ff-body:    'Inter', sans-serif;
+$ff-mono: 'Space Mono', monospace;
+$ff-body: 'Inter', sans-serif;
 
-// ─── RESET ───────────────────────────────────────────────
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+// RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   scroll-snap-type: y mandatory;
@@ -28,79 +34,133 @@ body {
   font-family: $ff-body;
   overflow-x: hidden;
   cursor: none;
-  @media (hover: none) { cursor: auto; }
+
+  @media (hover: none) {
+    cursor: auto;
+  }
 }
 
-// ─── CURSOR ──────────────────────────────────────────────
+// CURSOR
 .cursor {
-  position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
   transform: translate(-50%, -50%);
+
   &--dot {
-    width: 8px; height: 8px;
+    width: 8px;
+    height: 8px;
     background: $cyan;
     mix-blend-mode: screen;
     transition: width .15s, height .15s, background .15s;
   }
+
   &--ring {
-    width: 32px; height: 32px;
-    border: 1px solid rgba(56,189,248,.35);
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(56, 189, 248, .35);
     z-index: 9998;
     transition: width .2s, height .2s;
   }
-  &--large .cursor--dot { width: 18px; height: 18px; background: $orange; }
-  &--large .cursor--ring { width: 46px; height: 46px; }
-  @media (hover: none) { display: none; }
+
+  &--large .cursor--dot {
+    width: 18px;
+    height: 18px;
+    background: $orange;
+  }
+
+  &--large .cursor--ring {
+    width: 46px;
+    height: 46px;
+  }
+
+  @media (hover: none) {
+    display: none;
+  }
 }
 
-// ─── PROGRESS ────────────────────────────────────────────
+// PROGRESS
 .progress-bar {
-  position: fixed; top: 0; left: 0;
-  height: 2px; width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
   background: linear-gradient(90deg, $cyan, $purple);
   z-index: 300;
-  box-shadow: 0 0 8px rgba(56,189,248,.5);
+  box-shadow: 0 0 8px rgba(56, 189, 248, .5);
   transition: width .1s linear;
 }
 
-// ─── NAV ─────────────────────────────────────────────────
+// NAV
 .nav {
-  position: fixed; top: 0; left: 0; right: 0;
-  z-index: 200; height: 60px;
-  display: flex; align-items: center; justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 clamp(1.5rem, 4vw, 3rem);
   transition: background .4s, border-color .4s;
   border-bottom: 1px solid transparent;
 
   &--stuck {
-    background: rgba(4,8,15,.92);
+    background: rgba(4, 8, 15, .92);
     backdrop-filter: blur(14px);
     border-color: $border;
   }
 
   &__logo {
-    font-family: $ff-mono; font-size: .75rem; font-weight: 700;
-    color: $cyan; letter-spacing: .25em; text-decoration: none;
+    font-family: $ff-mono;
+    font-size: .75rem;
+    font-weight: 700;
+    color: $cyan;
+    letter-spacing: .25em;
+    text-decoration: none;
   }
 
   &__links {
-    display: flex; gap: 1.75rem; list-style: none;
-    @media (max-width: 700px) { display: none; }
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   &__link {
-    font-family: $ff-mono; font-size: .6rem;
-    color: rgba(255,255,255,.65); text-decoration: none;
-    letter-spacing: .15em; transition: color .2s;
+    font-family: $ff-mono;
+    font-size: .6rem;
+    color: rgba(255, 255, 255, .65);
+    text-decoration: none;
+    letter-spacing: .15em;
+    transition: color .2s;
     position: relative;
 
     &::after {
-      content: ''; position: absolute;
-      bottom: -3px; left: 0; right: 0;
-      height: 1px; background: $cyan;
-      transform: scaleX(0); transition: transform .25s;
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: $cyan;
+      transform: scaleX(0);
+      transition: transform .25s;
     }
-    &:hover { color: $cyan; }
-    &:hover::after { transform: scaleX(1); }
+
+    &:hover {
+      color: $cyan;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
   }
 }
 
@@ -130,65 +190,124 @@ body {
 
 // ─── SHARED SECTION ELEMENTS ─────────────────────────────
 .sec-eye {
-  font-family: $ff-mono; font-size: .6rem;
-  letter-spacing: .3em; color: $cyan;
+  font-family: $ff-mono;
+  font-size: .6rem;
+  letter-spacing: .3em;
+  color: $cyan;
   margin-bottom: .6rem;
-  display: flex; align-items: center; gap: .75rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
 
   &::before {
-    content: ''; display: block;
-    width: 1.5rem; height: 1px;
-    background: $cyan; flex-shrink: 0;
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background: $cyan;
+    flex-shrink: 0;
   }
-  &--center { justify-content: center; &::before { display: none; } }
+
+  &--center {
+    justify-content: center;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .sec-title {
   font-family: $ff-display;
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  font-weight: 700; color: #fff;
-  margin-bottom: 3rem; line-height: 1.15;
-  span { color: $cyan; }
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+  line-height: 1.15;
+
+  span {
+    color: $cyan;
+  }
 }
 
-// ─── BUTTONS ─────────────────────────────────────────────
+// BUTTONS
 .btn {
-  font-family: $ff-mono; font-size: .7rem; letter-spacing: .12em;
-  padding: .7rem 1.8rem; border-radius: 3px; text-decoration: none;
-  display: inline-flex; align-items: center; gap: .4rem;
-  transition: all .2s; cursor: pointer; border: none;
+  font-family: $ff-mono;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  padding: .7rem 1.8rem;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  transition: all .2s;
+  cursor: pointer;
+  border: none;
 
   &--solid {
-    background: $cyan; color: $bg; font-weight: 700;
-    &:hover { background: transparent; color: $cyan; box-shadow: inset 0 0 0 1px $cyan, 0 0 18px rgba(56,189,248,.2); }
+    background: $cyan;
+    color: $bg;
+    font-weight: 700;
+
+    &:hover {
+      background: transparent;
+      color: $cyan;
+      box-shadow: inset 0 0 0 1px $cyan, 0 0 18px rgba(56, 189, 248, .2);
+    }
   }
+
   &--outline {
-    background: transparent; color: $text;
-    box-shadow: inset 0 0 0 1px rgba(203,213,225,.2);
-    &:hover { color: $cyan; box-shadow: inset 0 0 0 1px $cyan, 0 0 14px rgba(56,189,248,.15); }
+    background: transparent;
+    color: $text;
+    box-shadow: inset 0 0 0 1px rgba(203, 213, 225, .2);
+
+    &:hover {
+      color: $cyan;
+      box-shadow: inset 0 0 0 1px $cyan, 0 0 14px rgba(56, 189, 248, .15);
+    }
   }
 }
 
-// ─── REVEAL ──────────────────────────────────────────────
+// REVEAL
 .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity .7s, transform .7s;
-  &.in { opacity: 1; transform: none; }
+
+  &.in {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-// ─── FOOTER ──────────────────────────────────────────────
+// FOOTER
 footer {
-  text-align: center; padding: 2rem;
+  text-align: center;
+  padding: 2rem;
   border-top: 1px solid $border;
-  font-family: $ff-mono; font-size: .58rem;
-  letter-spacing: .12em; color: $dim;
+  font-family: $ff-mono;
+  font-size: .58rem;
+  letter-spacing: .12em;
+  color: $dim;
   scroll-snap-align: start;
 }
 
-// ─── ANIMATIONS ──────────────────────────────────────────
+// ANIMATIONS
 @keyframes up {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
-@keyframes fadeIn { to { opacity: .45; } }
+
+@keyframes fadeIn {
+  to {
+    opacity: .45;
+  }
+}

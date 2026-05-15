@@ -7,7 +7,7 @@ import {
   PROJECTS_PERSONAL, PROJECTS_CLIENT,
 } from '../data';
 
-// ─── ABOUT ───────────────────────────────────────────────
+// ABOUT
 export function About() {
   return (
     <div className="snap-section">
@@ -37,7 +37,7 @@ export function About() {
   );
 }
 
-// ─── SKILLS ──────────────────────────────────────────────
+// SKILLS
 function SkillsMobileSlider() {
   const { sliderRef, current } = useSlider(SKILLS.length);
   const dotsRef = useRef(null);
@@ -80,7 +80,7 @@ export function Skills() {
   );
 }
 
-// ─── PROJECT CARD ────────────────────────────────────────
+// PROJECT CARD
 function ProjectCard({ project, isClient }) {
   return (
     <div className="proj">
@@ -150,7 +150,7 @@ export function Projects() {
   );
 }
 
-// ─── EXPERIENCE ──────────────────────────────────────────
+// EXPERIENCE
 export function Experience() {
   const { sliderRef, current } = useSlider(EXPERIENCE.length);
 
@@ -187,7 +187,7 @@ export function Experience() {
   );
 }
 
-// ─── EDUCATION ───────────────────────────────────────────
+// EDUCATION
 export function Education() {
   return (
     <div className="edu-certs-snap">
@@ -230,7 +230,7 @@ export function Education() {
   );
 }
 
-// ─── CONTACT ─────────────────────────────────────────────
+// CONTACT
 export function Contact() {
   return (
     <div className="snap-section">
@@ -238,14 +238,14 @@ export function Contact() {
         <div className="contact__wrap">
           <div className="sec-eye sec-eye--center reveal">07 · CONTACT</div>
           <h2 className="sec-title reveal">Let's Build Something</h2>
-          <p className="contact__sub reveal">Open to exciting opportunities, interesting collaborations, and conversations about React, Three.js, or cloud architecture.</p>
+          <p className="contact__sub reveal">Open to exciting opportunities, interesting collaborations, and conversations about React, Vue, Three.js, etc.</p>
           <div className="contact__grid reveal">
             <a href="mailto:hello@safwbdev.com" className="contact__link">✉ EMAIL</a>
             <a href="https://github.com/safwbdev" className="contact__link" target="_blank" rel="noreferrer">⌥ GITHUB</a>
             <a href="https://www.linkedin.com/in/safwbdev/" className="contact__link" target="_blank" rel="noreferrer">↗ LINKEDIN</a>
             <a href="https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/" className="contact__link" target="_blank" rel="noreferrer">◈ MOBYGAMES</a>
           </div>
-          <a href="#" className="btn btn--solid reveal">DOWNLOAD RESUME</a>
+          <a href="https://docs.google.com/document/d/13NxVHlr6dBIf9MVnxPjeG1Ea89YMaqAGyYcizhBi0Ok/edit?usp=sharing" className="btn btn--solid reveal" target='_blank'>DOWNLOAD RESUME</a>
         </div>
       </section>
     </div>

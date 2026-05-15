@@ -1,6 +1,6 @@
 @use 'globals' as *;
 
-// ─── HERO ────────────────────────────────────────────────
+// ─── HERO 
 .hero {
   position: relative;
   height: 100vh;
@@ -139,7 +139,7 @@
   }
 }
 
-// ─── ABOUT ───────────────────────────────────────────────
+// ABOUT
 .about {
   &__grid {
     display: grid;
@@ -204,7 +204,7 @@
   }
 }
 
-// ─── SKILLS ──────────────────────────────────────────────
+// SKILLS
 .skills {
   &__wrap {
     position: relative;
@@ -334,7 +334,7 @@
   }
 }
 
-// ─── PROJECTS ────────────────────────────────────────────
+// PROJECTS
 .projects {
   &__tabs {
     display: flex;
@@ -612,7 +612,7 @@
   margin-left: auto;
 }
 
-// ─── EXPERIENCE ──────────────────────────────────────────
+// EXPERIENCE
 .timeline {
   position: relative;
   padding-left: 1.5rem;
@@ -814,7 +814,7 @@
   margin-left: auto;
 }
 
-// ─── EDUCATION ───────────────────────────────────────────
+// EDUCATION
 .edu-certs-snap {
   // On desktop: single snap target containing both subsections
   scroll-snap-align: start;
@@ -973,7 +973,7 @@
   padding-top: .2rem;
 }
 
-// ─── CONTACT ─────────────────────────────────────────────
+// CONTACT
 .contact {
   &__wrap {
     max-width: 620px;
