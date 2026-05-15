@@ -1,9 +1,10 @@
 import dchu_0 from './assets/projects/dchu_0.webp';
 import sha_0 from './assets/projects/sha_0.webp';
 import twdlm_0 from './assets/projects/twdlm_0.webp';
-import uaeestate from './assets/projects/uaeestate.png';
+import uaeEstate from './assets/projects/uaeestate.png';
 import cryptostonks from './assets/projects/cryptostonks.png';
 import voyaqo from './assets/projects/voyaqo.png';
+import webRiff from './assets/projects/webRiff.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -117,11 +118,18 @@ export const PROJECTS_PERSONAL = [
         thumb: cryptostonks,
     },
     {
-        num: '03', title: 'Real UAEstate',
+        num: '03', title: 'Web Riff',
+        desc: 'Web-based rhythm game inspired by Guitar Hero, built with React and Three.js. Features fast-paced note tracking, responsive gameplay, animated 3D visuals, and real-time score mechanics designed for browser play.',
+        tags: ['React', 'Three.js'],
+        github: 'https://github.com/safwbdev/guitar-hero', demo: 'https://startling-pasca-58cd3f.netlify.app/',
+        thumb: webRiff,
+    },
+    {
+        num: '04', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
-        thumb: uaeestate,
+        thumb: uaeEstate,
     },
 
 ];
