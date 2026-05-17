@@ -31,7 +31,7 @@ export default function Hero() {
           <a href="#contact" className="btn btn--outline">GET IN TOUCH</a>
         </div>
         <div className="hero__socials">
-          <a href="https://www.linkedin.com/in/safwbdev/" className="hero__social-link" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/stefaanarizfangman/" className="hero__social-link" target="_blank" rel="noreferrer">
             <LinkedInIcon /> LinkedIn
           </a>
           <a href="https://github.com/safwbdev" className="hero__social-link" target="_blank" rel="noreferrer">

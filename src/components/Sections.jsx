@@ -242,7 +242,7 @@ export function Contact() {
           <div className="contact__grid reveal">
             <a href="mailto:hello@safwbdev.com" className="contact__link">✉ EMAIL</a>
             <a href="https://github.com/safwbdev" className="contact__link" target="_blank" rel="noreferrer">⌥ GITHUB</a>
-            <a href="https://www.linkedin.com/in/safwbdev/" className="contact__link" target="_blank" rel="noreferrer">↗ LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/stefaanarizfangman/" className="contact__link" target="_blank" rel="noreferrer">↗ LINKEDIN</a>
             <a href="https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/" className="contact__link" target="_blank" rel="noreferrer">◈ MOBYGAMES</a>
           </div>
           <a href="https://docs.google.com/document/d/13NxVHlr6dBIf9MVnxPjeG1Ea89YMaqAGyYcizhBi0Ok/edit?usp=sharing" className="btn btn--solid reveal" target='_blank'>DOWNLOAD RESUME</a>
