@@ -22,7 +22,7 @@ export default function App() {
       <Experience />
       <Education />
       <Contact />
-      <footer>SAFWBDEV © 2026 · BUILT WITH REACT + THREE.JS · KUALA LUMPUR, MALAYSIA</footer>
+      <footer>Stefaan Ariz Fangman © 2026 · BUILT WITH REACT + THREE.JS · KUALA LUMPUR, MALAYSIA</footer>
     </>
   );
 }
