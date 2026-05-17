@@ -5,6 +5,7 @@ import ProjectThumb from './ProjectThumb';
 import {
   SKILLS, EXPERIENCE, EDUCATION, CERTIFICATIONS,
   PROJECTS_PERSONAL, PROJECTS_CLIENT,
+  CONTACTS,
 } from '../data';
 
 // ABOUT
@@ -25,7 +26,7 @@ export function About() {
           </div>
           <div className="reveal" style={{ transitionDelay: '.1s' }}>
             <div className="about__stats">
-              <div className="about__stat"><span className="about__stat-n">5+</span><span className="about__stat-l">YEARS EXPERIENCE</span></div>
+              <div className="about__stat"><span className="about__stat-n">10+</span><span className="about__stat-l">YEARS EXPERIENCE</span></div>
               <div className="about__stat"><span className="about__stat-n">30+</span><span className="about__stat-l">PROJECTS SHIPPED</span></div>
               <div className="about__stat"><span className="about__stat-n">REACT</span><span className="about__stat-l">WEB EXPERIENCES</span></div>
               <div className="about__stat"><span className="about__stat-n">∞</span><span className="about__stat-l">CUPS OF COFFEE</span></div>
@@ -232,6 +233,8 @@ export function Education() {
 
 // CONTACT
 export function Contact() {
+
+
   return (
     <div className="snap-section">
       <section id="contact" className="page-section">
@@ -240,12 +243,12 @@ export function Contact() {
           <h2 className="sec-title reveal">Let's Build Something</h2>
           <p className="contact__sub reveal">Open to exciting opportunities, interesting collaborations, and conversations about React, Vue, Three.js, etc.</p>
           <div className="contact__grid reveal">
-            <a href="mailto:hello@safwbdev.com" className="contact__link">✉ EMAIL</a>
-            <a href="https://github.com/safwbdev" className="contact__link" target="_blank" rel="noreferrer">⌥ GITHUB</a>
-            <a href="https://www.linkedin.com/in/stefaanarizfangman/" className="contact__link" target="_blank" rel="noreferrer">↗ LINKEDIN</a>
-            <a href="https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/" className="contact__link" target="_blank" rel="noreferrer">◈ MOBYGAMES</a>
+            <a href={`mailto:{CONTACTS.email}`} className="contact__link">✉ EMAIL</a>
+            <a href={CONTACTS.github} className="contact__link" target="_blank" rel="noreferrer">⌥ GITHUB</a>
+            <a href={CONTACTS.linkedin} className="contact__link" target="_blank" rel="noreferrer">↗ LINKEDIN</a>
+            <a href={CONTACTS.mobygames} className="contact__link" target="_blank" rel="noreferrer">◈ MOBYGAMES</a>
           </div>
-          <a href="https://docs.google.com/document/d/13NxVHlr6dBIf9MVnxPjeG1Ea89YMaqAGyYcizhBi0Ok/edit?usp=sharing" className="btn btn--solid reveal" target='_blank'>DOWNLOAD RESUME</a>
+          <a href={CONTACTS.resume} className="btn btn--solid reveal" target='_blank'>DOWNLOAD RESUME</a>
         </div>
       </section>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ThreeBackground from './ThreeBackground';
+import { CONTACTS } from '../data';
 
 const LinkedInIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -12,8 +13,14 @@ const GithubIcon = () => (
   </svg>
 );
 const MobyIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M6 4c5 0 10 3.5 12 8-2 4.5-7 8-12 8-1.2 0-2-.8-2-2 0-1 .5-1.8 1.3-2.2L7 14H4v-2h3l-1.7-1.8A2.8 2.8 0 0 1 4 8c0-1.2.8-2 2-2zm8 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
   </svg>
 );
 
@@ -31,13 +38,13 @@ export default function Hero() {
           <a href="#contact" className="btn btn--outline">GET IN TOUCH</a>
         </div>
         <div className="hero__socials">
-          <a href="https://www.linkedin.com/in/stefaanarizfangman/" className="hero__social-link" target="_blank" rel="noreferrer">
+          <a href={CONTACTS.linkedin} className="hero__social-link" target="_blank" rel="noreferrer">
             <LinkedInIcon /> LinkedIn
           </a>
-          <a href="https://github.com/safwbdev" className="hero__social-link" target="_blank" rel="noreferrer">
+          <a href={CONTACTS.github} className="hero__social-link" target="_blank" rel="noreferrer">
             <GithubIcon /> GitHub
           </a>
-          <a href="https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/" className="hero__social-link" target="_blank" rel="noreferrer">
+          <a href={CONTACTS.mobygames} className="hero__social-link" target="_blank" rel="noreferrer">
             <MobyIcon /> MobyGames
           </a>
         </div>

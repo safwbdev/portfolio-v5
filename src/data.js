@@ -160,3 +160,11 @@ export const PROJECTS_CLIENT = [
         thumb: twdlm_0,
     },
 ];
+
+export const CONTACTS = {
+    email: "stefaan.fangman@yahoo.com",
+    github: "https://github.com/safwbdev",
+    linkedin: "https://www.linkedin.com/in/stefaanarizfangman/",
+    mobygames: "https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/",
+    resume: "https://drive.google.com/file/d/1ZWl70WSwkBDoUPJ1GA96o1YX6d94wk7X/view?usp=drive_link",
+}
