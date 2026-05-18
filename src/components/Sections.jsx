@@ -136,7 +136,7 @@ export function Projects() {
         <h2 className="sec-title reveal">Selected Work</h2>
         <div className="reveal" style={{ transitionDelay: '.1s' }}>
           <div className="projects__tabs">
-            <button className={`projects__tab${tab === 'client' ? ' active' : ''}`} onClick={() => setTab('client')}>CLIENT</button>
+            <button className={`projects__tab${tab === 'client' ? ' active' : ''}`} onClick={() => setTab('client')}>PROFESSIONAL</button>
             <button className={`projects__tab${tab === 'personal' ? ' active' : ''}`} onClick={() => setTab('personal')}>PERSONAL</button>
           </div>
           <div className={`projects__panel${tab === 'personal' ? ' active' : ''}`}>

@@ -5,6 +5,7 @@ import uaeEstate from './assets/projects/uaeestate.png';
 import cryptostonks from './assets/projects/cryptostonks.png';
 import voyaqo from './assets/projects/voyaqo.png';
 import webRiff from './assets/projects/webRiff.png';
+import ticketvault from './assets/projects/ticketvault.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -125,7 +126,14 @@ export const PROJECTS_PERSONAL = [
         thumb: webRiff,
     },
     {
-        num: '04', title: 'Real UAEstate',
+        num: '04', title: 'Ticket Vault',
+        desc: 'Online ticketing platform for discovering and purchasing event tickets with ease. Features secure payments, digital ticket access, event discovery tools, and a streamlined experience optimized for web and mobile users.',
+        tags: ['Vue', 'Vuetify', 'Pinia'],
+        github: 'https://github.com/safwbdev/ticketing-app', demo: 'https://ticketvaultv2.netlify.app/',
+        thumb: ticketvault,
+    },
+    {
+        num: '05', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
