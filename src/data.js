@@ -6,6 +6,7 @@ import cryptostonks from './assets/projects/cryptostonks.png';
 import voyaqo from './assets/projects/voyaqo.png';
 import webRiff from './assets/projects/webRiff.png';
 import ticketvault from './assets/projects/ticketvault.png';
+import pulse from './assets/projects/pulse.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -133,7 +134,14 @@ export const PROJECTS_PERSONAL = [
         thumb: ticketvault,
     },
     {
-        num: '05', title: 'Real UAEstate',
+        num: '05', title: 'Pulse Tracker',
+        desc: 'Offline-first workout tracking app designed for gym training and personal fitness management. Features workout logging, exercise history, progress tracking, and local data storage for fast, reliable access without an internet connection.',
+        tags: ['React', 'Zustand', 'Tailwind', 'Shadcn UI', 'Framer Motion'],
+        github: 'https://github.com/safwbdev/gym-tracker', demo: 'https://puls3tracker.netlify.app/',
+        thumb: pulse,
+    },
+    {
+        num: '06', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
