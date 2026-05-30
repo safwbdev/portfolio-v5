@@ -141,6 +141,13 @@ export const PROJECTS_PERSONAL = [
         thumb: pulse,
     },
     {
+        num: '06', title: 'Medcore',
+        desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
+        tags: ['Next Js', 'Zustand', 'Tanstack', 'Chakra UI', 'Framer Motion'],
+        github: 'https://github.com/safwbdev/medic-manager', demo: 'https://medcore-two.vercel.app/',
+        thumb: pulse,
+    },
+    {
         num: '06', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
