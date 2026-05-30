@@ -149,7 +149,7 @@ export const PROJECTS_PERSONAL = [
         thumb: medcore,
     },
     {
-        num: '06', title: 'Real UAEstate',
+        num: '07', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
