@@ -7,6 +7,7 @@ import voyaqo from './assets/projects/voyaqo.png';
 import webRiff from './assets/projects/webRiff.png';
 import ticketvault from './assets/projects/ticketvault.png';
 import pulse from './assets/projects/pulse.png';
+import medcore from './assets/projects/medcore.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -145,7 +146,7 @@ export const PROJECTS_PERSONAL = [
         desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
         tags: ['Next Js', 'Zustand', 'Tanstack', 'Chakra UI', 'Framer Motion'],
         github: 'https://github.com/safwbdev/medic-manager', demo: 'https://medcore-two.vercel.app/',
-        thumb: pulse,
+        thumb: medcore,
     },
     {
         num: '06', title: 'Real UAEstate',
