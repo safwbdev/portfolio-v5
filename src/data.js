@@ -151,7 +151,7 @@ export const PROJECTS_PERSONAL = [
     },
     {
         num: '07', title: 'Time Vortex',
-        desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
+        desc: 'Animated web experience recreating the iconic opening sequence of Doctor Who using Three.js. Features real-time 3D tunnel effects, particle systems, dynamic camera movement, and immersive visual storytelling rendered entirely in the browser.',
         tags: ['ThreeJS'],
         github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
         thumb: timevortex,
