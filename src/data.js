@@ -8,6 +8,7 @@ import webRiff from './assets/projects/webRiff.png';
 import ticketvault from './assets/projects/ticketvault.png';
 import pulse from './assets/projects/pulse.png';
 import medcore from './assets/projects/medcore.png';
+import timevortex from './assets/projects/timevortex.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -47,7 +48,7 @@ export const SKILLS = [
     },
     {
         title: '// GAME DEVELOPMENT',
-        pills: ['Construct 3', 'Defold', 'Three.js', 'WebGL', 'Game Development'],
+        pills: ['Construct 3', 'Defold', 'Three.js', 'GSAP', 'WebGL', 'Game Development'],
     },
     {
         title: '// PRACTICES & METHODOLOGIES',
@@ -149,7 +150,14 @@ export const PROJECTS_PERSONAL = [
         thumb: medcore,
     },
     {
-        num: '07', title: 'Real UAEstate',
+        num: '07', title: 'Time Vortex',
+        desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
+        tags: ['ThreeJS'],
+        github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
+        thumb: medcore,
+    },
+    {
+        num: '08', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
