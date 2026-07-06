@@ -154,7 +154,7 @@ export const PROJECTS_PERSONAL = [
         desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
         tags: ['ThreeJS'],
         github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
-        thumb: medcore,
+        thumb: timevortex,
     },
     {
         num: '08', title: 'Real UAEstate',
