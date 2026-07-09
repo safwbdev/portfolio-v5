@@ -198,5 +198,5 @@ export const CONTACTS = {
     github: "https://github.com/safwbdev",
     linkedin: "https://www.linkedin.com/in/stefaanarizfangman/",
     mobygames: "https://www.mobygames.com/person/1280466/stefaan-ariz-fangman/",
-    resume: "https://drive.google.com/file/d/1ZWl70WSwkBDoUPJ1GA96o1YX6d94wk7X/view?usp=drive_link",
+    resume: "https://docs.google.com/document/d/1i7q0jEfrqc1Au8sJMVi572gJfUg08uAv7093ah94VPA/edit?usp=sharing",
 }
