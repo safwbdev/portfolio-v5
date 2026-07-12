@@ -8,6 +8,7 @@ import webRiff from './assets/projects/webRiff.png';
 import ticketvault from './assets/projects/ticketvault.png';
 import pulse from './assets/projects/pulse.png';
 import medcore from './assets/projects/medcore.png';
+import aura from './assets/projects/aura.png';
 import timevortex from './assets/projects/timevortex.png';
 
 export const NAV_LINKS = [
@@ -150,7 +151,14 @@ export const PROJECTS_PERSONAL = [
         thumb: medcore,
     },
     {
-        num: '07', title: 'Time Vortex',
+        num: '07', title: 'Aura',
+        desc: 'Animated web experience recreating the iconic opening sequence of Doctor Who using Three.js. Features real-time 3D tunnel effects, particle systems, dynamic camera movement, and immersive visual storytelling rendered entirely in the browser.',
+        tags: ['ThreeJS', GSAP],
+        github: 'https://github.com/safwbdev/aura-ring', demo: 'https://auraairing.netlify.app/',
+        thumb: aura,
+    },
+    {
+        num: '08', title: 'Time Vortex',
         desc: 'Animated web experience recreating the iconic opening sequence of Doctor Who using Three.js. Features real-time 3D tunnel effects, particle systems, dynamic camera movement, and immersive visual storytelling rendered entirely in the browser.',
         tags: ['ThreeJS'],
         github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
