@@ -187,7 +187,7 @@ export const PROJECTS_CLIENT = [
         num: '01', title: 'DC Heroes United',
         desc: 'Interactive DC experience blending a community-driven TV series with a Vampire Survivors-style survival game. Play as Justice League heroes, earn currency, and vote with other players to shape each week’s episode outcomes.',
         tags: ['HTML/CSS/JS', 'Maps API', 'LocalStorage'],
-        github: 'https://www.mobygames.com/game/233587/dc-heroes-united/',
+        github: 'https://www.mobygames.com/game/233587/dc-heroes-united/credits/iphone/?autoplatform=true',
         demo: 'https://play.google.com/store/apps/details?id=com.genvid.burbank&hl=en&pli=1',
         thumb: dchu_0,
     },
