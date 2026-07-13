@@ -9,6 +9,7 @@ import ticketvault from './assets/projects/ticketvault.png';
 import pulse from './assets/projects/pulse.png';
 import medcore from './assets/projects/medcore.png';
 import aura from './assets/projects/aura.png';
+import hangman from './assets/projects/hangman.png';
 import timevortex from './assets/projects/timevortex.png';
 
 export const NAV_LINKS = [
@@ -158,7 +159,14 @@ export const PROJECTS_PERSONAL = [
         thumb: aura,
     },
     {
-        num: '08', title: 'Time Vortex',
+        num: '08', title: 'Hangman',
+        desc: 'An interactive Hangman game built with React and GSAP featuring animated SVG character drawing, smooth transitions, responsive gameplay, keyboard interactions, scoring, difficulty levels, and persistent player statistics. Designed to showcase modern frontend architecture, animation workflows, and state-driven UI development.',
+        tags: ['React', 'tailwind', 'GSAP'],
+        github: 'https://github.com/safwbdev/hangman-game', demo: 'https://stefshangmangame.netlify.app/',
+        thumb: hangman,
+    },
+    {
+        num: '09', title: 'Time Vortex',
         desc: 'Animated web experience recreating the iconic opening sequence of Doctor Who using Three.js. Features real-time 3D tunnel effects, particle systems, dynamic camera movement, and immersive visual storytelling rendered entirely in the browser.',
         tags: ['ThreeJS'],
         github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
