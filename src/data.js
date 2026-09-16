@@ -12,6 +12,7 @@ import aura from './assets/projects/aura.png';
 import hangman from './assets/projects/hangman.png';
 import timevortex from './assets/projects/timevortex.png';
 import minna from './assets/projects/minna.png';
+import ghosthunter from './assets/projects/ghosthunter.png';
 
 export const NAV_LINKS = [
     { href: '#about', label: 'ABOUT' },
@@ -132,11 +133,11 @@ export const PROJECTS_PERSONAL = [
         thumb: minna,
     },
     {
-        num: '04', title: 'Web Riff',
-        desc: 'Web-based rhythm game inspired by Guitar Hero, built with React and Three.js. Features fast-paced note tracking, responsive gameplay, animated 3D visuals, and real-time score mechanics designed for browser play.',
-        tags: ['React', 'Three.js'],
-        github: 'https://github.com/safwbdev/guitar-hero', demo: 'https://startling-pasca-58cd3f.netlify.app/',
-        thumb: webRiff,
+        num: '14', title: 'Ghost Hunter Hokkaido',
+        desc: 'First-person horror exploration game set in Hokkaido, Japan, built with Three.js and GSAP. Features atmospheric environments, flashlight-based exploration, immersive audio, and supernatural encounters inspired by Japanese folklore.',
+        tags: ['ThreeJs', 'GSAP', 'JavaScript', 'HTML', 'CSS', 'Canvas', 'Web Audio API'],
+        github: 'https://github.com/safwbdev/ghost-hunter-hokkaido', demo: 'https://ghosthunterhokkaido.netlify.app/',
+        thumb: ghosthunter,
     },
     {
         num: '05', title: 'Ticket Vault',
@@ -146,42 +147,49 @@ export const PROJECTS_PERSONAL = [
         thumb: ticketvault,
     },
     {
-        num: '06', title: 'Pulse Tracker',
+        num: '06', title: 'Web Riff',
+        desc: 'Web-based rhythm game inspired by Guitar Hero, built with React and Three.js. Features fast-paced note tracking, responsive gameplay, animated 3D visuals, and real-time score mechanics designed for browser play.',
+        tags: ['React', 'Three.js'],
+        github: 'https://github.com/safwbdev/guitar-hero', demo: 'https://startling-pasca-58cd3f.netlify.app/',
+        thumb: webRiff,
+    },
+    {
+        num: '07', title: 'Pulse Tracker',
         desc: 'Offline-first workout tracking app designed for gym training and personal fitness management. Features workout logging, exercise history, progress tracking, and local data storage for fast, reliable access without an internet connection.',
         tags: ['React', 'Zustand', 'Tailwind', 'Shadcn UI', 'Framer Motion'],
         github: 'https://github.com/safwbdev/gym-tracker', demo: 'https://puls3tracker.netlify.app/',
         thumb: pulse,
     },
     {
-        num: '07', title: 'Medcore',
+        num: '08', title: 'Medcore',
         desc: 'SaaS-based appointment management platform for healthcare providers and patients. Features online appointment booking, schedule management, patient records, automated reminders, and a responsive interface designed to streamline clinic operations.',
         tags: ['Next Js', 'Zustand', 'Tanstack', 'Chakra UI', 'Framer Motion'],
         github: 'https://github.com/safwbdev/medic-manager', demo: 'https://medcore-two.vercel.app/',
         thumb: medcore,
     },
     {
-        num: '08', title: 'Aura',
+        num: '09', title: 'Aura',
         desc: 'Interactive product showcase for the fictional Aura AI Ring, built with Three.js and GSAP. Combines cinematic scroll-driven storytelling, real-time 3D rendering, advanced animations, and polished micro-interactions to deliver a premium web experience.',
         tags: ['ThreeJS', 'GSAP'],
         github: 'https://github.com/safwbdev/aura-ring', demo: 'https://auraairing.netlify.app/',
         thumb: aura,
     },
     {
-        num: '09', title: 'Hangman',
+        num: '10', title: 'Hangman',
         desc: 'An interactive Hangman game built with React and GSAP featuring animated SVG character drawing, smooth transitions, responsive gameplay, keyboard interactions, scoring, difficulty levels, and persistent player statistics. Designed to showcase modern frontend architecture, animation workflows, and state-driven UI development.',
         tags: ['React', 'Tailwind', 'GSAP'],
         github: 'https://github.com/safwbdev/hangman-game', demo: 'https://stefshangmangame.netlify.app/',
         thumb: hangman,
     },
     {
-        num: '10', title: 'Time Vortex',
+        num: '11', title: 'Time Vortex',
         desc: 'Animated web experience recreating the iconic opening sequence of Doctor Who using Three.js. Features real-time 3D tunnel effects, particle systems, dynamic camera movement, and immersive visual storytelling rendered entirely in the browser.',
         tags: ['ThreeJS'],
         github: 'https://github.com/safwbdev/time-vortex', demo: 'https://time-vortex.netlify.app/',
         thumb: timevortex,
     },
     {
-        num: '11', title: 'Real UAEstate',
+        num: '12', title: 'Real UAEstate',
         desc: 'Looking for properties to buy or rent in the UAE? This real estate App built with Nest.js can help!',
         tags: ['Next js', 'REST API', 'Framer Motion', 'Zustand', 'Tanstack'],
         github: 'https://github.com/safwbdev/real_estate_app', demo: 'https://real-estate-app-9xtoswesk-safwbdev.vercel.app/',
